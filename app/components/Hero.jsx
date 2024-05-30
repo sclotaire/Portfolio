@@ -1,12 +1,13 @@
 import React from 'react'
 import Image from 'next/image'
 import FrontMockup from '../../images/front-cover-mockup-2.png'
+import Portfolio from './Portfolio'
+import Link from 'next/link'
 
 
-const Hero = () => {
+export default function Hero() {
     return (
         <main>
-            <section className=" dark:text-gray-50">
                 <div className="container flex flex-col justify-center p-6 mx-auto sm:py-12 lg:py-24 lg:flex-row lg:justify-between">
                     <div className='col-span-3'>
                         <Image
@@ -25,15 +26,13 @@ const Hero = () => {
                             <br className="hidden md:inline lg:hidden" /> and can't come out!
                         </p>
                         <div className="flex flex-col space-y-4 sm:items-center sm:justify-center sm:flex-row sm:space-y-0 sm:space-x-4 lg:justify-center">
-                            <a rel="noopener noreferrer" href="#" className="px-8 py-3 text-lg font-semibold rounded bg-[#9f7a62] dark:text-gray-50">Portfolio</a>
-                            <a rel="noopener noreferrer" href="#" className="px-8 py-3 text-lg text-[#9f7a62] font-semibold border rounded dark:border-[#9f7a62]">About me</a>
+                            <Link href="/portfolio" className="px-8 py-3 text-lg font-semibold rounded bg-[#9f7a62] dark:text-gray-50">Portfolio</Link>
+                            <Link href="#" className="px-8 py-3 text-lg text-[#9f7a62] font-semibold border rounded dark:border-[#9f7a62]">About me</Link>
                         </div>
                     </div>
                 </div>
-            </section>
         </main>
     )
 }
 
-export default Hero
 
