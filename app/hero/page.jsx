@@ -1,7 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
 import FrontMockup from '../../images/front-cover-mockup-2.png'
-import Portfolio from './Portfolio'
+import portfolio from '../portfolio/page'
 import Link from 'next/link'
 
 
@@ -12,7 +12,7 @@ export default function Hero() {
                     <div className='col-span-3'>
                         <Image
                             src={FrontMockup}
-                            alt='Image of Soumaya Clotaire'
+                            alt='numerous phones showing a mockup of the plan perfect app'
                             className='w-full'
                             height={1000}
                             width={1000}
@@ -27,7 +27,7 @@ export default function Hero() {
                         </p>
                         <div className="flex flex-col space-y-4 sm:items-center sm:justify-center sm:flex-row sm:space-y-0 sm:space-x-4 lg:justify-center">
                             <Link href="/portfolio" className="px-8 py-3 text-lg font-semibold rounded bg-[#9f7a62] dark:text-gray-50">Portfolio</Link>
-                            <Link href="#" className="px-8 py-3 text-lg text-[#9f7a62] font-semibold border rounded dark:border-[#9f7a62]">About me</Link>
+                            <Link href="/about" className="px-8 py-3 text-lg text-[#9f7a62] font-semibold border rounded dark:border-[#9f7a62]">About me</Link>
                         </div>
                     </div>
                 </div>
