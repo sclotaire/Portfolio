@@ -8,7 +8,7 @@ import Link from 'next/link'
 export default function Hero() {
     return (
         <main>
-                <div className="container flex flex-col justify-center p-6 mx-auto sm:py-12 lg:py-24 lg:flex-row lg:justify-between">
+                <div className=" flex flex-col justify-center p-6 mx-auto sm:py-12 lg:py-24 lg:flex-row lg:justify-between">
                     <div className='col-span-3'>
                         <Image
                             src={FrontMockup}
