@@ -1,4 +1,4 @@
-import NavBar from "../navBar/page"
+import NavBar from "../components/navBar/page"
 
 export default function AboutPage() {
     return (
